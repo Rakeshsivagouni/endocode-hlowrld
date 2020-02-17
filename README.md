@@ -51,4 +51,15 @@ minikube: v1.7.1
           * exposed the service endpoint (8080:25478)
           * a namespace called hello-world will be created during the deploy stage 
     * a Makefile is created to build the docker image, push the image to docker hub and deploy the helm chart 
+    
+    
+## how to deploy? 
+
+``` bash
+
+make all
+
+```
+
+
             
