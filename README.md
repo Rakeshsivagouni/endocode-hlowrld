@@ -57,6 +57,8 @@ minikube: v1.7.1
     
 ## how to deploy? 
 
+To deploy the helm chart you can run the makefile with the target "all" like below 
+
 
 
 ``` bash
