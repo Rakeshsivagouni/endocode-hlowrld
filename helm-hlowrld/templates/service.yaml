@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "helm-hlowrld.fullname" . }}
+  labels:
+{{ include "helm-hlowrld.labels" . | indent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+      targetPort: 25478
+      protocol: TCP
+      name: hlowrld
+  selector:
+    app.kubernetes.io/name: {{ include "helm-hlowrld.name" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
