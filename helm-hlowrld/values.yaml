@@ -5,7 +5,7 @@
 replicaCount: 3
 
 image:
-  repository: sharathvutpala/go-test
+  repository: rakesh446/hlowrld
   tag: v1
   pullPolicy: IfNotPresent
 
