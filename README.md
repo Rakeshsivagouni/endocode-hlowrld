@@ -36,9 +36,9 @@ hlowrld --help
 
 Prerequesites: 
 
-Docker : v19.03.6
-Helm: v2.16.1
-minikube: v1.7.1
+* Docker : v19.03.6
+* Helm: v2.16.1
+* minikube: v1.7.1
 
 
 **This helm chart is tested against a minikube cluster**
@@ -57,7 +57,7 @@ minikube: v1.7.1
     
 ## how to deploy? 
 
-To deploy the helm chart you can run the makefile with the target "all" like below 
+Helm chart can be deployed by executing the makefile with the target "all" like below 
 
 
 
