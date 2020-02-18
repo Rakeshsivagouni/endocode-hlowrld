@@ -13,4 +13,4 @@ push:
 
 deploy:
 	@kubectl create ns hello-world
-	@helm install --namespace hello-world --name hlowrld ./helm-hlowrld
+	@helm install --namespace hello-world --name hlowrld --set myValue=rakesh ./helm-hlowrld
